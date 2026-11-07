@@ -1,0 +1,18 @@
+---
+alwaysApply: true
+---
+
+# Arquitectura y forma de trabajo
+
+- Archivos de código: máximo 100 líneas. Si un archivo se acerca a ese límite, dividirlo en módulos o subcarpetas.
+- Funciones cortas (idealmente hasta 20 líneas), una sola responsabilidad y un nombre que diga lo que hacen.
+- Sin código espagueti: separar en capas (rutas → servicios → repositorios). Las rutas no contienen lógica de negocio.
+- Sin código duplicado. Sin carpetas ni archivos sin finalidad.
+- Nombres de código en inglés; comentarios y documentación en español.
+- Type hints y un docstring corto en cada función pública.
+- Nunca inventar endpoints, parámetros, credenciales ni respuestas de APIs. No simular integraciones.
+- Secretos solo en variables de entorno; nunca en el código.
+- Antes de modificar un archivo, leerlo. No sobrescribir archivos funcionales.
+- Hacer SOLO lo que pide el paso actual. No adelantar funcionalidades.
+- No marcar nada como terminado sin comprobarlo.
+- Al terminar cada tarea, informar: qué se hizo, archivos creados o modificados, qué se verificó y qué sigue.
